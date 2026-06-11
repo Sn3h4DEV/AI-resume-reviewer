@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Resume Reviewer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <h1>AI Resume Reviewer</h1>
+      <p class="subtitle">Upload your resume and paste the job description to get feedback.</p>
+
+      <form id="review-form">
+        <label for="resume-upload">Resume (PDF)</label>
+        <input
+          type="file"
+          id="resume-upload"
+          accept=".pdf"
+          required
+        />
+
+        <label for="job-description">Job Description</label>
+        <textarea
+          id="job-description"
+          placeholder="Paste the job description here..."
+          rows="6"
+          required
+        ></textarea>
+
+        <button type="submit" id="submit-btn">Analyze</button>
+      </form>
+    </div>
+
+    <section id="results" class="results hidden">
+      <h2>Results</h2>
+      <div id="results-content"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
