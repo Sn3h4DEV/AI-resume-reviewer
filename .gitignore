@@ -1,2 +1,19 @@
+# Node dependencies
 node_modules/
+package-lock.json
+
+# Environment variables & secrets (CRITICAL: Do not commit)
 .env
+.env*.local
+
+# Editor & IDE settings
+.vscode/
+.idea/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+*.log
+
+# Nested local copies (if any)
+AI resume reviewer/
